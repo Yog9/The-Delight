@@ -4,8 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -13,31 +15,24 @@
   </head>
   <body>
 <div class ="reservation"><!--home-->
-<nav class="navbar navbar-expand-lg ">
-  <a class="navbar-brand" href="#">The Delight</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">RESERVATIONS</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">MENU</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<div class="middle_text mx-auto text-center my-auto borderx">
-<h1>Make a</h1>
-<h5>RESERVATION</h5>
+ <div id ="sidebar">
+    <!--<p>THE DELIGHT</p>-->
+      <div class="toggle_btn">
+        <span></span>
+        <span></span>
+        <span></span> 
+      </div>
+      <ul class="nbar">
+        <li>
+          <a href="index.html" class="sidebar__menu-link">HOME</a></li>
+        <li> <a href="menu.html" class="sidebar__menu-link">MENU</a></li>
+        <li><a href="reservation.html" class="sidebar__menu-link">RESERVATION</a></li>
+        <li><a href="contact.html" class="sidebar__menu-link">CONTACT</a></li>
+      </ul>
+    </div>
+<div class="middle_text mx-auto text-center my-auto">
+<h1 class ="make animated slideInUp delay-1s">Make a</h1>
+<h5 class="animated pulse slower">RESERVATION</h5>
  <span>
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 24.748 24.748" style="enable-background:new 0 0 24.748 24.748;" xml:space="preserve">
                     <g>
@@ -45,16 +40,204 @@
                     </g>
                 </svg>
             </span>
-             <h6>BOOKING A TABLE ONLINE IS EASY AND TAKES JUST A COUPLE OF MINUTES.</h6>
+             <h6 class="animated slideInDown delay-2s">BOOKING A TABLE IS EASY AND TAKES JUST A COUPLE OF MINUTES.</h6>
            </div>
 </div>
 <div class="table">
-  
+  <div class="main-container_r">
+   <form id="reservation-form" class="mt-5 mb-5">
+                    <input type="date">
+                    <select>
+                        <option value="7:00 pm">7:00 pm</option>
+                        <option value="7:30 pm">7:30 pm</option>
+                        <option value="8:00 pm">8:00 pm</option>
+                        <option value="8:30 pm">8:30 pm</option>
+                    </select>
+                    <select>
+                        <option value="2 people">2 people</option>
+                        <option value="4 people">4 people</option>
+                        <option value="6 people">6 people</option>
+                    </select>
+                  <button type="button" class="book">Book Now</button>
+                </form>
+  <div class="row theprivate">
+    <div class="col-md-6">
+      <h3 class="text-center">RESERVE BY PHONE</h3>
+      <p>We take reservations for lunch and dinner. To make a reservation, please call us at (027) 8338 145 between 10am-6pm, Monday to Friday.</p>
+      <p>We do not book the bar area – we leave this for walk-in guests to ensure that we always offer some tables for those who have not booked.</p>
+    </div>
+    <div class="col-md-6">
+      <h3 class="text-center">PRIVATE DININGS & EVENTS</h3>
+      <p>Whatever your event or celebration, we are here to make your special day a truly memorable one. Rosa’s private dining experts are more than happy to create custom floral arrangements and arrange for guests to meet Chef Moise during the course of their meal. For parties of 8-12 we have the roastery table which is available for private hire.</p>
+    </div>
   </div>
+
+
+  <div class="row ">
+    <div class="col-md-6 text-center">
+      <h1 class="reserveh1">The private </h1>
+      <h2>MEZZANINE</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 24.748 24.748" style="enable-background:new 0 0 24.748 24.748;" xml:space="preserve">
+                    <g>
+                        <path d="M23.091,18.561c-0.37,0.644-1.042,1-1.734,1c-0.339,0-0.683-0.086-0.998-0.268l-5.982-3.455v6.91c0,1.104-0.896,2-2,2   c-1.104,0-2-0.896-2-2v-6.911l-5.985,3.456c-0.315,0.182-0.659,0.268-0.998,0.268c-0.691,0-1.364-0.356-1.734-1   c-0.552-0.957-0.225-2.18,0.732-2.73l5.983-3.456L2.39,8.919C1.433,8.366,1.106,7.145,1.658,6.188   C2.21,5.231,3.434,4.903,4.39,5.456l5.984,3.455V2c0-1.104,0.896-2,2-2c1.104,0,2,0.896,2,2v6.91l5.982-3.455   c0.956-0.553,2.183-0.225,2.732,0.732c0.552,0.957,0.225,2.18-0.732,2.731l-5.981,3.456l5.982,3.455   C23.314,16.381,23.643,17.604,23.091,18.561z" fill="#be8040"></path>
+                    </g>
+                </svg>
+                <p>Rosa’s 50 seat room, “The Meazzanine Room” features a temperature-controlled wine cellar, displays of more wine and a private atmosphere. A semi-private room, “Barbaresco,” is available for meetings, birthdays and other occasions.</p>
+    </div>
+    <div class="col-md-6">
+      <img src="images/H.jpg" class="seating wow animated slideInRight" data-wow-offset="200">
+    </div>
+  </div>
+
+
+<div class="row mb-4">
+    <div class="col-md-6">
+      <img src="images/fg.jpeg" class="seating wow animated slideInLeft" data-wow-offset="100">
+    </div>
+    <div class="col-md-6 text-center">
+      <h1 class="text-center reserveh1">The dining </h1>
+      <h2 class="text-center">CROWN</h2>
+       <svg class="text-center" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 24.748 24.748" style="enable-background:new 0 0 24.748 24.748;" xml:space="preserve">
+                    <g>
+                        <path d="M23.091,18.561c-0.37,0.644-1.042,1-1.734,1c-0.339,0-0.683-0.086-0.998-0.268l-5.982-3.455v6.91c0,1.104-0.896,2-2,2   c-1.104,0-2-0.896-2-2v-6.911l-5.985,3.456c-0.315,0.182-0.659,0.268-0.998,0.268c-0.691,0-1.364-0.356-1.734-1   c-0.552-0.957-0.225-2.18,0.732-2.73l5.983-3.456L2.39,8.919C1.433,8.366,1.106,7.145,1.658,6.188   C2.21,5.231,3.434,4.903,4.39,5.456l5.984,3.455V2c0-1.104,0.896-2,2-2c1.104,0,2,0.896,2,2v6.91l5.982-3.455   c0.956-0.553,2.183-0.225,2.732,0.732c0.552,0.957,0.225,2.18-0.732,2.731l-5.981,3.456l5.982,3.455   C23.314,16.381,23.643,17.604,23.091,18.561z" fill="#be8040"></path>
+                    </g>
+                </svg>
+                <p>Overlooking the dining room and open kitchen, can seat up to 75 guests or a standing reception of 130 guests. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+    </div>
+  </div>
+  <!--<div class="champ pt-5 pb-2">
+    <h2 class="text-center">CHAMPAINGE ON US</h2>
+    <p class="text-center">Every Monday,Tuesday and Wednesday evening, we’re offering groups of 10 or more that book an area in our bar a bottle of Champagne.</br>
+
+Call our reservations team on (027) 8338 145 for more information.</p>
+  </div>-->
+<div class="main-container_r">
+<div class="foot">
+    <div class="row">
+      <div class="col-md-6">
+         <div class="footer_left_text ">
+    <p>Join our mailing list for updates, events and recipes</p>
+    <input type="email" name="emailaddress" placeholder="Email Address" class="mb-2"></br>
+    <button type="button" class="Subcribe">Subcribe Now</button>
+  </div>
+</div>
+  <div class="col-md-6 copy_text">
+    <p>©2018 Proudly created by Yogita Verma.</p>
+    <div class="footer-icons">
+<a href="#">
+      <svg class="icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="49.652px" height="49.652px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
+   xml:space="preserve">
+<g>
+  <g>
+    <g>
+      <path fill ="white" d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073
+        c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z"/>
+      <polygon fill ="white" points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762      "/>
+      <path fill ="white" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
+        C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164
+        c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z"
+        />
+      <path  fill ="white" d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897
+        h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217
+        C32.342,22.823,32.549,23.802,32.549,24.826z"/>
+    </g>
+  </g>
+</g>
+</svg></a>
+
+<a href="#">
+<svg  class="icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="49.652px" height="49.652px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
+   xml:space="preserve">
+<g>
+  <g>
+    <path fill ="white" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
+      C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845
+      v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z
+      "/>
+  </g>
+</g>
+</svg></a>
+
+<a href="#">
+<svg  class="icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="49.652px" height="49.652px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
+   xml:space="preserve">
+<g>
+  <g>
+    <path fill="white" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
+      C49.652,11.137,38.516,0,24.826,0z M35.901,19.144c0.011,0.246,0.017,0.494,0.017,0.742c0,7.551-5.746,16.255-16.259,16.255
+      c-3.227,0-6.231-0.943-8.759-2.565c0.447,0.053,0.902,0.08,1.363,0.08c2.678,0,5.141-0.914,7.097-2.446
+      c-2.5-0.046-4.611-1.698-5.338-3.969c0.348,0.066,0.707,0.103,1.074,0.103c0.521,0,1.027-0.068,1.506-0.199
+      c-2.614-0.524-4.583-2.833-4.583-5.603c0-0.024,0-0.049,0.001-0.072c0.77,0.427,1.651,0.685,2.587,0.714
+      c-1.532-1.023-2.541-2.773-2.541-4.755c0-1.048,0.281-2.03,0.773-2.874c2.817,3.458,7.029,5.732,11.777,5.972
+      c-0.098-0.419-0.147-0.854-0.147-1.303c0-3.155,2.558-5.714,5.713-5.714c1.644,0,3.127,0.694,4.171,1.804
+      c1.303-0.256,2.523-0.73,3.63-1.387c-0.43,1.335-1.333,2.454-2.516,3.162c1.157-0.138,2.261-0.444,3.282-0.899
+      C37.987,17.334,37.018,18.341,35.901,19.144z"/>
+  </g>
+</g>
+</svg></a>
+
+<a href="#">
+<svg class="icons" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   width="49.652px" height="49.652px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;"
+   xml:space="preserve">
+<g>
+  <g>
+    <g>
+      <path fill ="transparent" d="M21.5,28.94c-0.161-0.107-0.326-0.223-0.499-0.34c-0.503-0.154-1.037-0.234-1.584-0.241h-0.066
+        c-2.514,0-4.718,1.521-4.718,3.257c0,1.89,1.889,3.367,4.299,3.367c3.179,0,4.79-1.098,4.79-3.258
+        c0-0.204-0.024-0.416-0.075-0.629C23.432,30.258,22.663,29.735,21.5,28.94z"/>
+      <path fill ="transparent" d="M19.719,22.352c0.002,0,0.002,0,0.002,0c0.601,0,1.108-0.237,1.501-0.687c0.616-0.702,0.889-1.854,0.727-3.077
+        c-0.285-2.186-1.848-4.006-3.479-4.053l-0.065-0.002c-0.577,0-1.092,0.238-1.483,0.686c-0.607,0.693-0.864,1.791-0.705,3.012
+        c0.286,2.184,1.882,4.071,3.479,4.121H19.719L19.719,22.352z"/>
+      <path fill="white" d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826
+        C49.652,11.137,38.516,0,24.826,0z M21.964,36.915c-0.938,0.271-1.953,0.408-3.018,0.408c-1.186,0-2.326-0.136-3.389-0.405
+        c-2.057-0.519-3.577-1.503-4.287-2.771c-0.306-0.548-0.461-1.132-0.461-1.737c0-0.623,0.149-1.255,0.443-1.881
+        c1.127-2.402,4.098-4.018,7.389-4.018c0.033,0,0.064,0,0.094,0c-0.267-0.471-0.396-0.959-0.396-1.472
+        c0-0.255,0.034-0.515,0.102-0.78c-3.452-0.078-6.035-2.606-6.035-5.939c0-2.353,1.881-4.646,4.571-5.572
+        c0.805-0.278,1.626-0.42,2.433-0.42h7.382c0.251,0,0.474,0.163,0.552,0.402c0.078,0.238-0.008,0.5-0.211,0.647l-1.651,1.195
+        c-0.099,0.07-0.218,0.108-0.341,0.108H24.55c0.763,0.915,1.21,2.22,1.21,3.685c0,1.617-0.818,3.146-2.307,4.311
+        c-1.15,0.896-1.195,1.143-1.195,1.654c0.014,0.281,0.815,1.198,1.699,1.823c2.059,1.456,2.825,2.885,2.825,5.269
+        C26.781,33.913,24.89,36.065,21.964,36.915z M38.635,24.253c0,0.32-0.261,0.58-0.58,0.58H33.86v4.197
+        c0,0.32-0.261,0.58-0.578,0.58h-1.195c-0.322,0-0.582-0.26-0.582-0.58v-4.197h-4.192c-0.32,0-0.58-0.258-0.58-0.58V23.06
+        c0-0.32,0.26-0.582,0.58-0.582h4.192v-4.193c0-0.321,0.26-0.58,0.582-0.58h1.195c0.317,0,0.578,0.259,0.578,0.58v4.193h4.194
+        c0.319,0,0.58,0.26,0.58,0.58V24.253z"/>
+    </g>
+  </g>
+</g>
+</svg></a>
+    </div>
+  </div>
+  </div>
+</div>
+
+ 
+
+<div class ="modal"><!--home-->
+  <div class="modal_window animated slideInDown text-center">
+<svg class="call"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 32.667 32.667" style="enable-background:new 0 0 32.667 32.667;" xml:space="preserve">
+<g>
+  <path class="call" d="M16.333,0C7.327,0,0,7.327,0,16.334c0,9.006,7.326,16.333,16.333,16.333c0.557,0,1.007-0.451,1.007-1.006   c0-0.556-0.45-1.007-1.007-1.007c-7.896,0-14.318-6.424-14.318-14.319c0-7.896,6.422-14.32,14.318-14.32   c7.896,0,14.317,6.424,14.317,14.32c0,3.299-1.756,6.571-4.269,7.955c-0.913,0.502-1.903,0.751-2.959,0.761   c0.634-0.378,1.183-0.887,1.591-1.531c0.08-0.121,0.186-0.226,0.238-0.359c0.328-0.789,0.357-1.684,0.555-2.516   c0.243-1.066-4.658-3.143-5.084-1.815c-0.154,0.493-0.39,2.048-0.699,2.458c-0.275,0.365-0.953,0.193-1.377-0.168   c-1.117-0.952-2.364-2.352-3.458-3.457l0.002-0.001c-0.028-0.029-0.062-0.062-0.092-0.091c-0.031-0.03-0.062-0.062-0.093-0.092l0,0   c-1.106-1.093-2.506-2.338-3.457-3.458c-0.36-0.424-0.534-1.1-0.168-1.376c0.41-0.31,1.966-0.543,2.458-0.698   c1.326-0.425-0.75-5.329-1.816-5.084c-0.832,0.195-1.727,0.225-2.516,0.552c-0.134,0.056-0.238,0.16-0.359,0.24   c-2.799,1.775-3.16,6.083-0.428,9.292c1.041,1.228,2.127,2.416,3.245,3.576l-0.006,0.004c0.031,0.031,0.063,0.06,0.095,0.09   c0.03,0.031,0.059,0.062,0.088,0.095l0.006-0.006c1.16,1.118,2.535,2.764,4.769,4.255c4.703,3.141,8.312,2.264,10.438,1.098   c3.67-2.021,5.312-6.338,5.312-9.719C32.667,7.327,25.339,0,16.333,0z" fill="#cb9966"/>
+</g>
+</svg>
+<p class="text-center modal_para">We're currently not accepting reservations online.
+</br> Please call us to complete your reservation:
+</br>
+<span class="number">(800)-800-0000</span>
+</p>
+<button class="modal_button"type="button">OK</button>
+
+</div>
+</div>
      <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="wow-min.js"></script>
+<script src="app.js"></script>
   </body>
+
 </html>

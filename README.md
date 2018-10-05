@@ -18,13 +18,12 @@ The purpose of this project was to get familiar using bootstrap 4.
 * Javascript
 
 ### Features
-**1. Responsive Design**
 
-**2. Clicking the book now button in the reservation section shows a modal which can be closed by clicking outside
+**1. Clicking the book now button in the reservation section shows a modal which can be closed by clicking outside
      the modal window.**
 
-**3. Implemented Wow.js plugin to reveal animations when user scrolls.**
+**2. Implemented Wow.js plugin to reveal animations when user scrolls.**
 
 ### Coming Soon 
 - [ ]  Recreating the project using SASS and HTML5.
-
+- [ ]  Responsive Design.

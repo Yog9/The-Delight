@@ -1,19 +1,7 @@
  new WOW().init();
 document.querySelector('.toggle_btn').addEventListener("click", function(event){
     document.querySelector('#sidebar').classList.toggle('active');
-   if (event.target.classList.contains('lines'))
-   {
-   	console.log("in klines");
-   	event.target.classList.remove('lines');
-   document.querySelector('.cross').style.display ="block";
-   }
-   else if (event.target.classList.contains('cross'))
-   {
-   console.log("in cross");
-   document.querySelector('.cross').style.display ="none";
-   	event.target.classList.add('lines');
-   }
-    
+   
 
   });
 // Get the modal

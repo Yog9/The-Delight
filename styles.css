@@ -11,7 +11,7 @@ body,html{overflow-x: hidden;
 .reservation
 {
 background-image:url('images/bread-block.jpg');
-/*height:50vh;*/
+height:90vh;
 
 }
 .home
@@ -47,6 +47,7 @@ background-image:url('images/bread-block.jpg');
 	color:white;
 	position:relative;
 	top:35%;
+	/*padding:200px ;*/
 }
 .middle_text h1,.about-text h1
 {
